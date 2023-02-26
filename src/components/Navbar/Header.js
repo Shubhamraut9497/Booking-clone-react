@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //  import Button from 'react-bootstrap/Button';
- import { Avatar } from '@mui/material';
+//  import { Avatar } from '@mui/material';
  import { useNavigate } from 'react-router-dom';
 
 const Header=()=>{
@@ -13,12 +13,11 @@ const Header=()=>{
             <h1>Booking.com</h1>
         </div>
         <div className="header__right">
-            <div><Avatar></Avatar></div>
-            <button type="submit" className="bt" onClick={()=>navigate("/register")}>Register</button>
-            <button type="submit" className="bt"onClick={()=>navigate("/login")}>Login</button>
+            <button type="submit" className="bst" onClick={()=>navigate("/register")}>Register</button>
+            <button type="submit" className="bst"onClick={()=>navigate("/login")}>Login</button>
         </div>
     </div>
   )
 }
 
-export default Header
+export default Header;

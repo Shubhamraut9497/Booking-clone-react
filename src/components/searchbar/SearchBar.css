@@ -1,0 +1,151 @@
+.headerSearch{
+    height:50px;
+    background-color: white;
+    border:3px solid #febb02;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    position:absolute;
+    padding:10px 0px;
+    margin-left:30px;  
+            /*margin and width is given here so make it responsive at the end*/
+    /* width:1000px; */
+    margin-top:190px;
+    width: 85%;
+}
+
+.headerIcon{
+    color:gray; 
+
+} 
+
+.headerSearch__item{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.headerSearch__input{
+    border:none;
+    outline:none;
+    margin-top: 10px;
+
+}
+.headerSearch__text{
+    color:rgb(160, 152, 152);
+    cursor:pointer;
+    
+}
+.date2{
+    position: absolute;
+    top:50;
+    margin-top:360px;
+    z-index: 2;
+}
+
+.options{
+    z-index: 2;
+    top:70px;
+    background-color: white;
+    color:rgb(136, 131, 131);
+    border:5px;
+    position:relative;
+}
+.optionItem{
+    /* width:200px; */
+    display:flex;
+    justify-content: space-between;
+    margin:10px;
+}
+
+.optionCouterButton{
+    width:20px;
+    height:20px;
+    border:1px solid #0071c2;
+    cursor:pointer;
+    background-color: white;
+    
+}
+.de{
+   visibility: initial;
+   display:none;
+}
+.optionCount{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    font-size: 12px;
+    color:black;
+}
+@media only screen and (max-width:600){
+    .headerSearch{
+        height:30px;
+        background-color: white;
+        border:1px solid #febb02;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        position:absolute;
+        padding:2px 0px;
+        margin-left:13px;  
+                /*margin and width is given here so make it responsive at the end*/
+        /* width:1000px; */
+        margin-top:150px;
+        width:40%;
+        
+    }
+    .headerBtn{
+        margin-left:-40px;
+    }
+    .optionCouterButton{
+        width:10px;
+        height:10px;
+        border:1px solid #0071c2;
+        cursor:pointer;
+        background-color: white;
+        
+    }
+    .headerBtn{
+        font-size: 10px;
+    }
+    .headerSearch__text{
+        font-size: 5px;
+    }
+}
+@media only screen and (max-width:400){
+    .headerSearch{
+        height:20px;
+        background-color: white;
+        border:1px solid #febb02;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        position:absolute;
+        padding:2px 0px;
+        margin-left:0px;  
+                /*margin and width is given here so make it responsive at the end*/
+        /* width:1000px; */
+        margin-top:150px;
+        width:20%;
+        
+    }
+    .headerBtn{
+        margin-left:-40px;
+    }
+    .optionCouterButton{
+        width: 5px;
+        height:5px;
+        border:1px solid #0071c2;
+        cursor:pointer;
+        background-color: white;
+        
+    }
+    .headerBtn{
+        font-size: 10px;
+    }
+    .headerSearch__text{
+        font-size: 5px;
+    }
+}
