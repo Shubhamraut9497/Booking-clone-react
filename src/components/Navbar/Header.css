@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top:10px;
+    background-color: rgb(22, 22, 71);
 }
 .header__left{
     color:white;
@@ -19,8 +20,13 @@
    font-weight: 700;
    color:black;
    margin-left: 20px;
-   border-radius:10px;
+   height:50px;
    width:80px;
+}
+
+.bst:hover{
+    color:white;
+    background-color: black;
 }
 .header__right{
     display:flex;

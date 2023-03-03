@@ -1,40 +1,38 @@
-.headerSearch{
+ .headerSearch{
     height:50px;
     background-color: white;
     border:3px solid #febb02;
     display:flex;
     align-items: center;
     justify-content: space-around;
-    position:absolute;
+    position:relative;
+    top:210px;
+    border-radius: 5px;
     padding:10px 0px;
-    margin-left:30px;  
+    margin-left:160px;  
+    width:100%;
+    max-width: 1024px;
             /*margin and width is given here so make it responsive at the end*/
     /* width:1000px; */
-    margin-top:190px;
-    width: 85%;
-}
-
+ }
 .headerIcon{
     color:gray; 
-
+ 
 } 
 
-.headerSearch__item{
+.headerSearchItem{
     margin-left: 10px;
     display: flex;
     align-items: center;
-    text-align: center;
     gap: 10px;
 }
 
-.headerSearch__input{
+.headerSearchInput{
     border:none;
     outline:none;
-    margin-top: 10px;
-
 }
-.headerSearch__text{
-    color:rgb(160, 152, 152);
+.headerSearchText{
+    color:lightgray; 
     cursor:pointer;
     
 }
@@ -45,20 +43,21 @@
     z-index: 2;
 }
 
-.options{
+.Options{
     z-index: 2;
-    top:70px;
+    top:50px;
     background-color: white;
     color:rgb(136, 131, 131);
     border:5px;
-    position:relative;
+    position:absolute;
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
 }
-.optionItem{
-    /* width:200px; */
-    display:flex;
+ .optionItems{
+    width:200px; 
+     display:flex;
     justify-content: space-between;
     margin:10px;
-}
+}   
 
 .optionCouterButton{
     width:20px;
@@ -68,9 +67,24 @@
     background-color: white;
     
 }
+.optionCounter{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    font-size: 12px;
+    color:black;
+}
 .de{
    visibility: initial;
    display:none;
+}
+.headerBtn{
+    border:none;
+    color:black;
+}
+.headerBtn:hover{
+    color:white;
+    background-color: black;
 }
 .optionCount{
     display:flex;
@@ -79,22 +93,9 @@
     font-size: 12px;
     color:black;
 }
-@media only screen and (max-width:600){
+@media  screen and (max-width:1000px){
     .headerSearch{
-        height:30px;
-        background-color: white;
-        border:1px solid #febb02;
-        display:flex;
-        align-items: center;
-        justify-content: space-around;
-        position:absolute;
-        padding:2px 0px;
-        margin-left:13px;  
-                /*margin and width is given here so make it responsive at the end*/
-        /* width:1000px; */
-        margin-top:150px;
-        width:40%;
-        
+        margin-left: 0px;
     }
     .headerBtn{
         margin-left:-40px;
@@ -107,12 +108,7 @@
         background-color: white;
         
     }
-    .headerBtn{
-        font-size: 10px;
-    }
-    .headerSearch__text{
-        font-size: 5px;
-    }
+    
 }
 @media only screen and (max-width:400){
     .headerSearch{
@@ -148,4 +144,4 @@
     .headerSearch__text{
         font-size: 5px;
     }
-}
+} 

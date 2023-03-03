@@ -3,14 +3,17 @@ import "./SearchItem.css";
 import { Data } from "../Data/Data";
 import {useNavigate} from 'react-router-dom'
 
+
 function SearchItem(props) {
   const [hotelData, setHotelData] = useState([]);
+  // const location=useLocation();
   const navigate=useNavigate();
-
+  let d=props.destination
+  console.log(d);
   const hotelApi = () => {
     
     fetch(
-      `https://content.newtonschool.co/v1/pr/63b85bcf735f93791e09caf4/hotels?city=${props.destination}`
+      `https://content.newtonschool.co/v1/pr/63b85bcf735f93791e09caf4/hotels?city=${d}`
     )
       .then((res) => {
         return res.json();
@@ -52,8 +55,8 @@ function SearchItem(props) {
                 <button>{hotel.rating}</button>
               </div>
               <div className="detailText">
-                <span class="siPrice">₹{" "}{hotel.price_per_night}</span>
-                <span class="siTaxOp">Includes Taxes and fees</span>
+                <span className="siPrice">₹{" "}{hotel.price_per_night}</span>
+                <span className="siTaxOp">Includes Taxes and fees</span>
                 <button className="siCbutton" onClick={()=>navigate("/payment")}>Book now</button>
               </div>
             </div>

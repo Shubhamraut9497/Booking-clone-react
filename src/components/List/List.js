@@ -83,7 +83,7 @@ function List() {
             <button>Search</button>
           </div>
           <div className="listResult">
-            <SearchItem options={options} date={date} destination={destination}/>
+            <SearchItem options={options} date={date} destination={destination.charAt(0).toUpperCase()+destination.slice(1)}/>
           </div>
         </div>
       </div>
